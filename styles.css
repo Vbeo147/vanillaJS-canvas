@@ -2,6 +2,7 @@ canvas {
   width: 800px;
   height: 600px;
   border: 5px solid black;
+  margin-bottom: 10px;
 }
 
 body {
@@ -17,6 +18,31 @@ body {
   margin-bottom: 20px;
 }
 
+.input-container input,
+button {
+  margin-right: 20px;
+  width: 70px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid lightgray;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.input-container input[type="text"] {
+  width: 200px;
+  padding: 2px 3px 2px 3px;
+}
+
+input[type="file"] {
+  visibility: hidden;
+  width: 0px;
+}
+
+.input-container button:hover {
+  background-color: lightgray;
+}
+
 .color-option {
   width: 50px;
   height: 50px;
@@ -30,4 +56,16 @@ body {
 
 .color-option:hover {
   filter: drop-shadow(0 0 0.3rem black);
+}
+
+label {
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  padding: 3px 4px 3px 4px;
+  cursor: pointer;
+}
+
+#file {
+  visibility: hidden;
+  opacity: 0;
 }
